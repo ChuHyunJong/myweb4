@@ -1,3 +1,4 @@
+//카드 선택 후 다시 뒤집기
 function setListenerToCard(){
     const cardAreaArr = document.querySelectorAll(".card-area");
     for(const cardArea of cardAreaArr){
@@ -15,6 +16,7 @@ function setListenerToCard(){
 
 const main = document.querySelector("main");
 
+//카드 생성
 function generateCardList(){
     const cardCnt = document.querySelector("#cardCnt").value;
     if(cardCnt > 50){
@@ -45,6 +47,7 @@ function generateCardList(){
 
 }
 
+//카드 내용물 랜덤으로 가져오기
 function shuffleArr(arr){
     for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
